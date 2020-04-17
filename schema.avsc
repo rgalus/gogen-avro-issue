@@ -1,0 +1,34 @@
+{
+    "type": "record",
+    "name": "DemoSchema",
+    "fields": [
+        {
+            "name": "data",
+            "type": {
+                "type": "array",
+                "items": [
+                    {
+                        "type": "record",
+                        "name": "foo",
+                        "fields": [
+                            {
+                                "name": "id",
+                                "type": "string"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "record",
+                        "name": "bar",
+                        "fields": [
+                            {
+                                "name": "id",
+                                "type": "string"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
